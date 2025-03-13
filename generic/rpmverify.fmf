@@ -21,3 +21,7 @@ discover:
       - name: rpmverify
         test: 'rpmverify $(rpm -qa | grep libseccomp-devel)'
         duration: 2m
+
+adjust+:
+  - when: initiator is not defined
+    enabled: false
