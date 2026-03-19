@@ -19,7 +19,7 @@ discover:
     how: shell
     tests:
       - name: rpmverify
-        test: 'rpmverify $(rpm -qa | grep libseccomp-devel)'
+        test: 'rpmverify $(rpm -qa | grep libseccomp)'
         duration: 2m
 
 adjust+:
